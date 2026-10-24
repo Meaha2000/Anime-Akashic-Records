@@ -81,9 +81,8 @@ Never worry about mismatched catalog entries. Pass `required_ids=mal`, `required
 - **Multi-Work Blending (`POST /recommend`)**: Combine multiple favorites (e.g., *Steins;Gate* + *Monster*) to find works at their thematic intersection, while steering away from disliked titles via `negative_seeds`.
 - **Franchise Filtering**: `exclude_franchise=true` (enabled by default) automatically filters out direct sequels, prequels, OVAs, and spin-offs so users discover genuinely new series.
 
-### 4. Grounded Q&A (`/ask`) & Prefix Autocomplete (`/autocomplete`)
+### 4. Grounded Q&A (`/ask`)
 - **`/ask`**: Ask complex questions about lore, plot points, or character relationships and receive answers grounded strictly in verified catalog excerpts (`chunks`).
-- **`/autocomplete`**: Fast prefix and fuzzy title lookup across English, Romaji, and Native titles for search bars.
 
 ---
 
@@ -110,7 +109,6 @@ Add this to your MCP client configuration (`claude_desktop_config.json` or `.cur
 - `aar_search` — Semantic & hybrid search across 146,000+ works by plot description, scene memory, and filters.
 - `aar_recommend` / `aar_find_similar` — Single or multi-seed recommendations with franchise exclusion.
 - `aar_ask` — Grounded question answering with source citations.
-- `aar_lookup_work` — Full metadata, staff, character cast, and cross-platform IDs for any work.
 - `aar_stats` & `aar_health` — Live corpus statistics and service status.
 
 ### Ideal for Discord Bots & Community Apps
@@ -243,8 +241,6 @@ fun fetchSimilarByTmdb(tmdbId: Int): String? {
 | `/recommend/{work_id}` | `GET` | Single-work similarity recommendations using any AAR or external platform ID. |
 | `/recommend` | `POST` | Multi-seed recommendations with negative seed steering and franchise filtering. |
 | `/ask` | `GET`, `POST` | Grounded Q&A over canonical work synopses, character profiles, and lore excerpts. |
-| `/autocomplete` | `GET` | Instant title autocomplete across English, Romaji, and Native titles. |
-| `/work/{work_id}` | `GET` | Full canonical work record, staff, cast, relations, and cross-platform IDs. |
 | `/suggest` | `POST` | Submit missing works, community plot descriptions, or metadata corrections. |
 | `/health` | `GET` | Quota-free service health check and live catalog counts. |
 
