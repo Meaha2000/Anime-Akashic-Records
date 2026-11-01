@@ -22,7 +22,7 @@ Traditional anime and manga APIs (**Jikan/MyAnimeList**, **AniList**, **TMDB**, 
 
 **Anime Akashic Records (AAR)** is a semantic discovery and recommendation layer designed to work directly alongside your existing database or application stack:
 
-- **146,000+ Canonical Works** across 6 formats: `ANIME`, `MANGA`, `LIGHT_NOVEL`, `VISUAL_NOVEL`, `MANHWA`, and `MANHUA`.
+- **144,698 Canonical Works** across 6 formats: `ANIME`, `MANGA`, `LIGHT_NOVEL`, `VISUAL_NOVEL`, `MANHWA`, and `MANHUA`.
 - **444,000+ Linked Entities**: Characters, voice actors (seiyuu), directors, authors, composers, and studios.
 - **Plot & Scene Retrieval**: Understands natural language descriptions, obscure plot memories, and specific narrative premises in any language.
 - **Multi-Seed Recommendations**: Generate thematic and stylistic recommendations from one or multiple works, with support for negative seeds (`negative_seeds`) and automatic franchise/sequel suppression.
@@ -106,7 +106,7 @@ Add this to your MCP client configuration (`claude_desktop_config.json` or `.cur
 ```
 
 **Exposed MCP Tools:**
-- `aar_search` — Semantic & hybrid search across 146,000+ works by plot description, scene memory, and filters.
+- `aar_search` — Semantic & hybrid search across 144,698 works by plot description, scene memory, and filters.
 - `aar_recommend` / `aar_find_similar` — Single or multi-seed recommendations with franchise exclusion.
 - `aar_ask` — Grounded question answering with source citations.
 - `aar_stats` & `aar_health` — Live corpus statistics and service status.
